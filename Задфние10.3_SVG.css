@@ -1,0 +1,44 @@
+/*Задание 1.
+Сверстайте кнопку, которая будет содержать в себе icon_01 (как в примере в последнем видео).
+При клике на кнопку иконка должна меняться на icon_02. Повторный клик меняет иконку обратно.
+*/
+.btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    display: flex;
+    margin: 5px 10px;
+    padding: 10px 15px;
+    border-radius: 1px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: white;
+    background: #b8134aab;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    box-shadow: 0px 2px 8px 2px rgba(141, 150, 178, .3);
+    transform: scale(1.05);
+  }
+  
+  .btn_text {
+    margin-right: 15px;
+  }
+  
+  .btn_icon1 {
+    width: 21px;
+    height: 21px;
+    font-size: 21px;
+  }
+  
+  .btn--magic .btn_icon1 {
+    animation-name: magic1;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }

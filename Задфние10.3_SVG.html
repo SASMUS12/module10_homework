@@ -1,0 +1,27 @@
+<!--Задание 1.
+Сверстайте кнопку, которая будет содержать в себе icon_01 (как в примере в последнем видео).
+При клике на кнопку иконка должна меняться на icon_02. Повторный клик меняет иконку обратно.
+-->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Задфние10.3_SVG.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Работа с SVG</h1>
+    <button class="btn j-btn-test">
+        <div class="btn_text">Смена иконок</div>
+        <div class="btn_icon1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-left-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" id="iconPath" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM10.828 5.172a.5.5 0 0 0-.707 0L6.025 9.268V6.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H9.5a.5.5 0 0 0 0-1H6.732l4.096-4.096a.5.5 0 0 0 0-.707z"/>
+          </svg>
+        </div>
+      </button>
+</body>
+<script src="Задфние10.3_SVG.js"></script>
+</html>

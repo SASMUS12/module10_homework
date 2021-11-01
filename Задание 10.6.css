@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: rgba(230, 16, 16, 0.884);
+    --hover-color: rgba(241, 133, 32, 0.884);
+    --secondary-color: rgba(241, 133, 32, 0.884);
+    --main-width: 450px;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.container {
+    width: 500px;
+    height: auto;
+    background: var(--secondary-color);
+    padding: 5px;
+    padding-top: 15px;
+    margin-top: 5px;
+}
+header {
+    width: var(--main-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.message {
+    border: var(--primary-color) 2px solid;
+    padding: 5px;
+    flex-grow: 2;
+}
+.message:focus {
+    outline: none;
+}
+.btn {
+    background: #FFFFFF;
+    padding: 5px 10px;
+    border: none;
+    background: var(--primary-color);
+    margin: 0 5px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: var(--hover-color);
+}
+
+.btn:active {
+    background: var(--primary-color);
+}
+.messages {
+    width: var(--main-width);
+    min-height: 200px;
+    background: #fff;
+    border: var(--primary-color) 2px solid;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px 8px;
+}
+footer {
+    padding: 5px 25px;
+    color: #333;
+    font-size: 0.7rem;
+}
+.myMessage {
+    text-align: right;
+}
+.myMessage > span {
+    border-radius: 10px 10px 0px 10px;
+}
+.oppMessage {
+    text-align: left;
+}
+.oppMessage > span {
+    border-radius: 10px 10px 10px 0px;
+}
+.messages > p > span, .messages > p > a {
+    padding: 5px;
+    border: var(--primary-color) 2px solid;
+    display: inline-block;
+    max-width: 75%;
+    margin: .2rem;
+    word-wrap: break-word;
+}
+.messages > p > .time {
+    display: inline-block;
+    border: none;
+}

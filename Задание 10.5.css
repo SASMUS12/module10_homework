@@ -1,0 +1,21 @@
+/*Задание 2.
+Сверстайте кнопку, клик на которую будет выводить данные о размерах
+экрана с помощью alert. */
+.btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    display: flex;
+    margin: 5px 10px;
+    padding: 10px 15px;
+    border-radius: 1px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: white;
+    background: #1147f788;
+    transition: 0.3s;
+  }
